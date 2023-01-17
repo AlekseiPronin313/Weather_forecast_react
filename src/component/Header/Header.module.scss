@@ -1,7 +1,41 @@
 .header {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.logo {
+  max-width: 65px;
+  max-height: 65px;
+  margin-right: 20px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #4793FF;
+}
+
+.change_theme {
+  margin-right: 25px;
+}
+
+.select {
+  width: 194px;
+  height: 37px;
+  background: rgba(71, 147, 255, 0.2);
+  border-radius: 10px;
 }

@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+.this_day {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: $light-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.top_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+  .temp {
+    font-size: 96px;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  .day_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: $light-color;
+    margin: 0;
+  }
+}
+
+.bottom_block {
+  color: $base-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  .time {
+    margin: 0;
+
+  }
+  .city {
+    margin: 7px 0 0;
+
+  }
+}
+
+

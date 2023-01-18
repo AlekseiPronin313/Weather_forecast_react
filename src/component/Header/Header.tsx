@@ -8,10 +8,22 @@ interface Props {
 
 const Header = (props: Props) => {
     const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
+        { value: 'city-1', label: 'Рязань' },
+        { value: 'city-2', label: 'Актау' },
+        { value: 'city-3', label: 'Калининград' }
     ]
+
+    const colourStyles = {
+        control: (styles: any) => ({
+            ...styles,
+            backgroundColor: 'rgba(71, 147, 255, 0.2)',
+            width: '194px',
+            height: '37px',
+            border: 'none',
+            borderRadius: '10px',
+            zIndex: 100,
+        }),
+    }
 
     return (
         <header className={Style.header}>
@@ -21,7 +33,10 @@ const Header = (props: Props) => {
             </div>
             <div className={Style.wrapper}>
                 <div className={Style.change_theme}><GlobalSvgSelector id={'change_theme'}/></div>
-                <Select className={Style.select} options={options} />
+                <Select
+                    defaultValue={options[0]}
+                    styles={colourStyles}
+                    options={options} />
             </div>
         </header>
     )

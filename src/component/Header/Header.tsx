@@ -32,7 +32,7 @@ const Header = (props: Props) => {
                 <h1 className={Style.title}>React weather</h1>
             </div>
             <div className={Style.wrapper}>
-                <div className={Style.change_theme}><GlobalSvgSelector id={'change_theme'}/></div>
+                <div className={Style.change_theme}><GlobalSvgSelector id={'change-theme'}/></div>
                 <Select
                     defaultValue={options[0]}
                     styles={colourStyles}

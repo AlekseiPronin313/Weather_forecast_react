@@ -1,14 +1,48 @@
 import React from "react";
 import Style from './ThisDayInfo.module.scss'
+import cloud from '../../../assets/images/cloud.png'
+import ThisDayItem from "./ThisDayItem";
 
-interface Props {
+interface Props {}
 
+export interface Item {
+    icon_id: string;
+    name: string;
+    value: string;
 }
 
 const ThisDayInfo = (props: Props) => {
+    const items = [
+        {
+            icon_id: 'temp',
+            name: 'Температура',
+            value: '20° - ощущается как 17°',
+        },
+        {
+            icon_id: 'pressure',
+            name: 'Давление',
+            value: '765 мм ртутного столба - нормальное',
+        },
+        {
+            icon_id: 'precipitation',
+            name: 'Осадки',
+            value: 'Без осадков',
+        },
+        {
+            icon_id: 'wind',
+            name: 'Ветер',
+            value: '3 м/с юго-запад - легкий ветер',
+        },
+    ];
+
     return (
-        <div >
-            Home
+        <div className={Style.this_day_info}>
+            <ul className={Style.info_items}>
+                {items.map((item: Item) => (
+                    <ThisDayItem key={item.icon_id} item={item}/>
+                ))}
+            </ul>
+            <img className={Style.cloud} src={cloud} alt='img'/>
         </div>
     )
 }

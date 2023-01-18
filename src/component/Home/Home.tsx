@@ -1,6 +1,7 @@
 import React from "react";
 import Style from './Home.module.scss'
 import ThisDay from "./ThisDay/ThisDay";
+import ThisDayInfo from "./ThisDayInfo/ThisDayInfo";
 
 interface Props {
 
@@ -8,9 +9,13 @@ interface Props {
 
 const Home = (props: Props) => {
     return (
-        <div className={Style.home}>
-           <ThisDay/>
-        </div>
+        <section className={Style.home}>
+            <div className={Style.wrapper}>
+                <ThisDay/>
+                <ThisDayInfo/>
+            </div>
+
+        </section>
     )
 }
 

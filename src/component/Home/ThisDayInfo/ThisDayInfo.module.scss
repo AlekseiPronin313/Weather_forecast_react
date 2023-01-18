@@ -1,0 +1,60 @@
+@import "../../../styles/variables";
+
+.this_day_info {
+  position: relative;
+  padding: 40px 31px;
+  box-sizing: border-box;
+  max-width: 750px;
+  width: 100%;
+  background: $light-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.info_items {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  z-index: 3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  .indicator {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    border-radius: 50%;
+  }
+
+  .indicator__name {
+    width: 100px;
+    color: $base-color;
+    text-align: left;
+    margin: 0 20px 0;
+  }
+
+  .indicator__value {
+    margin: 0;
+  }
+}
+
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

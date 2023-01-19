@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "./component/Home/Home";
 import MonthStatistics from "./component/MonthStatistics/MonthStatistics";
 import Header from "./component/Header/Header";
+import {Popup} from "./component/Popup/Popup";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               <Route path='/' element={<Home/>}/>
               <Route path='month-statistics' element={<MonthStatistics/>}/>
           </Routes>
+          <Popup/>
       </div>
   );
 }

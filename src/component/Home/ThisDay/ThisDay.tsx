@@ -1,17 +1,18 @@
 import React from "react";
 import Style from './ThisDay.module.scss'
 import {GlobalSvgSelector} from "../../../assets/icons/global/GlobalSvgSelector";
+import {Weather} from "../../../store/types/types";
 
 interface Props {
-
+    weather: Weather
 }
 
-const ThisDay = (props: Props) => {
+const ThisDay = ({weather}: Props) => {
     return (
         <div className={Style.this_day}>
             <div className={Style.top_block}>
                 <div className={Style.wrapper}>
-                <div className={Style.temp}>20°</div>
+                <div className={Style.temp}>{Math.floor(weather.main.temp)}°</div>
                 <p className={Style.day_name}>Сегодня</p>
                 </div>
                 <GlobalSvgSelector id='sun'/>

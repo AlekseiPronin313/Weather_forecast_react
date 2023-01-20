@@ -6,7 +6,7 @@
   box-sizing: border-box;
   max-width: 750px;
   width: 100%;
-  background: $light-background;
+  background: var(#{--components-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
 }
@@ -49,6 +49,7 @@
 
   .indicator__value {
     margin: 0;
+    color: var(#{--text-color-default});
   }
 }
 

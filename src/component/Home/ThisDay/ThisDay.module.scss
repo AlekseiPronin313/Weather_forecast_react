@@ -5,7 +5,7 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background: $light-background;
+  background: var(#{--components-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
 }
@@ -31,7 +31,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 49px;
-    color: $light-color;
+    color: var(#{--text-color-default});
     margin: 0;
   }
 }

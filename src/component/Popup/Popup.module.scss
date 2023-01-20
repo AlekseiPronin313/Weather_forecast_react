@@ -17,6 +17,11 @@
   background: $light-background;
 }
 
+.popup__opened {
+  visibility: visible;
+  opacity: 1;
+}
+
 .blur {
   position: fixed;
   top: 0;
@@ -28,6 +33,8 @@
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .close {

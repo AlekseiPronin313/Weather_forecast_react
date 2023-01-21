@@ -15,14 +15,15 @@ const Home = (props: Props) => {
     const dispatch = useCustomDispatch()
     const {weather} = useCustomSelector(selectCurrentWeatherData)
 
+
     useEffect(() => {
-        dispatch(fetchCurrentWeather('paris'))
+        dispatch(fetchCurrentWeather('Актау'))
     }, [])
     return (
         <section className={Style.home}>
             <div className={Style.wrapper}>
                 <ThisDay weather={weather}/>
-                <ThisDayInfo/>
+                <ThisDayInfo weather={weather}/>
             </div>
             <Days/>
         </section>

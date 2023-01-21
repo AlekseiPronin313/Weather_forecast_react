@@ -64,7 +64,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
                     />
                 </svg>
             );
-        case 'rain':
+        case '03d':
             return (
                 <svg
                     width="48"
@@ -111,7 +111,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
                     </defs>
                 </svg>
             );
-        case 'small_rain':
+        case '02d':
             return (
                 <svg
                     width="48"
@@ -224,7 +224,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
                     </defs>
                 </svg>
             );
-        case 'sun':
+        case '01d':
             return (
                 <svg
                     width="48"
@@ -256,7 +256,7 @@ export const GlobalSvgSelector = ({ id }: Props) => {
                     </defs>
                 </svg>
             );
-        case 'mainly_cloudy':
+        case '04d':
             return (
                 <svg
                     width="48"
